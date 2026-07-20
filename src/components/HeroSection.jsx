@@ -6,9 +6,16 @@ import Header from './Header';
 const HeroSection = () => {
   return (
     <section className="hero-section" id="home">
-      <video className="hero-video" autoPlay loop muted playsInline>
-        <source src="/Bolo.mp4" type="video/mp4" />
-      </video>
+      <div className="hero-video-container">
+        <iframe
+          className="hero-youtube-video"
+          src="https://www.youtube.com/embed/NoIARt55jTE?autoplay=1&mute=1&loop=1&playlist=NoIARt55jTE&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+          frameBorder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowFullScreen
+          title="Background Video"
+        ></iframe>
+      </div>
       <div className="hero-overlay"></div>
       
       <div className="container hero-content-container">
