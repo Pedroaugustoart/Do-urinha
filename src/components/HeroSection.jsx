@@ -17,6 +17,7 @@ const HeroSection = () => {
         ></iframe>
       </div>
       <div className="hero-overlay"></div>
+      <div className="hero-click-blocker"></div>
       
       <div className="container hero-content-container">
         <div className="hero-text-content">
