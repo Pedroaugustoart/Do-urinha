@@ -1,0 +1,134 @@
+.catalog-section {
+  padding: 60px 0;
+  background-color: var(--color-white);
+}
+
+.catalog-header {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-family: var(--font-logo);
+  font-size: 3rem;
+  color: var(--color-icon);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.category-tabs-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-arrow {
+  background-color: var(--color-white);
+  color: var(--color-icon);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.scroll-arrow:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-dark);
+}
+
+.scroll-arrow.left {
+  margin-right: -15px;
+}
+
+.scroll-arrow.right {
+  margin-left: -15px;
+}
+
+.category-tabs-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 15px 0;
+  scroll-behavior: smooth;
+  /* Hide scrollbar for clean look */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+.category-tabs-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.category-tabs {
+  display: flex;
+  gap: 15px;
+  min-width: max-content;
+  padding: 0 10px;
+}
+
+.category-tab {
+  padding: 10px 24px;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--color-bg);
+  color: var(--color-text-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.category-tab:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.category-tab.active {
+  background-color: var(--color-icon);
+  color: var(--color-white);
+}
+
+.catalog-content {
+  background-color: var(--color-bg);
+  border-radius: var(--border-radius-md);
+  padding: 40px;
+}
+
+.category-info {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.category-name {
+  color: var(--color-text-dark);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.category-desc {
+  color: #666;
+  font-size: 0.95rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .catalog-content {
+    padding: 20px;
+  }
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .category-name {
+    font-size: 1.5rem;
+  }
+}
