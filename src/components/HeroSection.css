@@ -100,3 +100,13 @@
     width: 100%;
   }
 }
+
+/* Ocultar controles nativos do Safari/iOS que podem aparecer sobrepostos */
+*::-webkit-media-controls-panel,
+*::-webkit-media-controls-play-button,
+*::-webkit-media-controls-start-playback-button,
+*::-webkit-media-controls-enclosure,
+video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
+}
