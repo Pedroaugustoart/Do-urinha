@@ -24,8 +24,8 @@
 .scroll-arrow {
   background-color: var(--color-white);
   color: var(--color-icon);
-  width: 40px;
-  height: 40px;
+  width: 44px; /* Aumentado para 44px (Touch Target) */
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   flex-shrink: 0;
 }
 
-.scroll-arrow:hover {
+.scroll-arrow:hover, .scroll-arrow:active {
   background-color: var(--color-primary);
   color: var(--color-text-dark);
 }
