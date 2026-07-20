@@ -32,13 +32,16 @@
 
 .category-title {
   font-family: var(--font-body);
-  font-size: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
   margin-bottom: 20px;
   text-align: center;
+  line-height: 1.4;
+  padding: 0 10px;
 }
 
 .category-btn {
